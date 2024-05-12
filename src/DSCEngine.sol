@@ -26,7 +26,7 @@
 pragma solidity 0.8.20;
 
 import {DecentralizedStableCoin} from "./DecentralizedStableCoin.sol";
-import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+import { ReentrancyGuard } from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
@@ -61,7 +61,6 @@ contract DSCEngine is ReentrancyGuard {
     ///////////////////////////////////////////////////////////////////////
     // State Variables                                                            //
     ///////////////////////////////////////////////////////////////////////
-
     uint256 private constant PRECISION = 1e18;
     uint256 private constant ADDITIONAL_FEED_PRECISION = 1e10;
     uint256 private constant LIQUIDATION_THRESHOLD = 50; // you need to be 200% overcollaterallized.
