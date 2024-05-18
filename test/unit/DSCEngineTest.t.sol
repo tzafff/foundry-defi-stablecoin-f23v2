@@ -8,12 +8,6 @@ import { DecentralizedStableCoin } from "../../src/DecentralizedStableCoin.sol";
 import { HelperConfig } from "../../script/HelperConfig.s.sol";
 import { ERC20Mock } from "@openzeppelin/contracts/mocks/ERC20Mock.sol"; //Updated mock location
 import {MockV3Aggregator} from "../mocks/MockV3Aggregator.sol";
-// import { ERC20Mock } from "../mocks/ERC20Mock.sol";
-// import { MockV3Aggregator } from "../mocks/MockV3Aggregator.sol";
-// import { MockMoreDebtDSC } from "../mocks/MockMoreDebtDSC.sol";
-// import { MockFailedMintDSC } from "../mocks/MockFailedMintDSC.sol";
-// import { MockFailedTransferFrom } from "../mocks/MockFailedTransferFrom.sol";
-// import { MockFailedTransfer } from "../mocks/MockFailedTransfer.sol";
 import { Test, console } from "forge-std/Test.sol";
 import { StdCheats } from "forge-std/StdCheats.sol";
 
